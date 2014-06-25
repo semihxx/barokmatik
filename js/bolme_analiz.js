@@ -2,6 +2,7 @@ var m2=0;
 
 function hesapla(form)
 {
+console.log(form);
     m2=Math.round(eval(form.metrekare.value));
     if (m2 > 0)  {
          alcipanfx= Math.ceil(m2 * 2.05/3);
@@ -31,6 +32,7 @@ function hesapla(form)
          yalitimmalzeme = Math.ceil(m2 * 1)
          form.yalitimmalzeme.value = yalitimmalzeme + " boy"
 
+		$("#calc").slideDown();
     } else {
         alert("HATA: m² \"0\" dan büyük olmalıdır!");
         document.forms[0].metrekare.focus();
