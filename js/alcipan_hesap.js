@@ -39,10 +39,10 @@ function hesapla(form) {
 
         dubelvida = Math.ceil(m2 * 0.4);
         form.dubelvida.value = dubelvida + " adet"
-
+		
+		$("#calc").slideDown();
     } else {
         alert("HATA: m² \"0\" dan büyük olmalıdır!");
         document.forms[0].metrekare.focus();
     }
-$("#calc").slideDown();
 }

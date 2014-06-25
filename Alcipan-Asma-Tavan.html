@@ -19,7 +19,14 @@
 		<script src="js/alcipan_hesap.js"></script>
 		<style>
 			#content input{
-				width:80px; float: left; margin-top: 3px;padding: 8px;height: 33px;
+				width:50px; float: left; margin-top: 3px;padding: 8px;height: 33px;
+			}
+			#main-head{
+				margin: 0 0 20px;
+				padding-top: 20px;
+			}
+			#hesapno, #calc input{
+				width: 80px !important;
 			}
 			#content button{
 				border: none;
@@ -86,12 +93,12 @@
 				</div>
 			</div>
 			<div id="content">
-				<h2>Alçıpan Asma Tavan Hesap Formu</h2>
+				<h2 id="main-head">Alçıpan Asma Tavan Hesap Formu</h2>
 				 <form action="">
 							   <li>
-										<input id="hesapno" value="1" name="metrekare" /><div class="m2"><span class="m">m</span><span class="up">2</span></div>
+										<input type="number" id="hesapno" value="" name="metrekare" /><div class="m2"><span class="m">m</span><span class="up">2</span></div>
 										
-										<input id="btnHesap" class="button" type="button" name="button" value="Hesapla" onclick="hesapla(this.form)" />
+										<input id="btnHesap" class="button" type="button" name="button" value="Hesapla" onclick="hesapla(this.form)" style="width: 90px;" />
 									<li>
 									<br>
 								</li>
@@ -106,30 +113,30 @@
 
 
 								<li>
-									<label>Alçıpan Flex- 3m²/PLAKA</label><input name="alcipanfx" value="0" size="10" class="inputhesap"></li>
+									<label>Alçıpan Flex- 3m²/PLAKA</label><input name="alcipanfx" value="0" size="10" class="inputhesap" disabled></li>
 								<li>
-									<label>Tavan C profili 0.50mm 3 metre/BOY</label><input name="artfixTC" value="0" size="10" class="inputhesap"></li>
+									<label>Tavan C profili 0.50mm 3 metre/BOY</label><input name="artfixTC" value="0" size="10" class="inputhesap" disabled></li>
 								<li>
-									<label>Tavan Uprofili 0.50mm 3 metre/BOY</label><input name="artfixTU" value="0" size="10" class="inputhesap"></li>
+									<label>Tavan Uprofili 0.50mm 3 metre/BOY</label><input name="artfixTU" value="0" size="10" class="inputhesap" disabled></li>
 								<li>
-									<label>Çelik Dübel</label><input name="celikdubel" value="0" size="10" class="inputhesap"></li>
+									<label>Çelik Dübel</label><input name="celikdubel" value="0" size="10" class="inputhesap" disabled></li>
 								<li>
-									<label>Askı teli 60</label><input name="askiteli" value="0" size="10" class="inputhesap"></li>
+									<label>Askı teli 60</label><input name="askiteli" value="0" size="10" class="inputhesap" disabled></li>
 								<li>
-									<label>Askı Maşası</label><input name="askimasasi" value="0" size="10" class="inputhesap"></li>
+									<label>Askı Maşası</label><input name="askimasasi" value="0" size="10" class="inputhesap" disabled></li>
 								<li>
 									<label>Klips </label>
-									<input name="klips" value="0" size="10" class="inputhesap"></li>
+									<input name="klips" value="0" size="10" class="inputhesap" disabled></li>
 								<li>
-									<label>Ekleme</label><input name="eklemeparcasi" value="0" size="10" class="inputhesap"></li>
+									<label>Ekleme</label><input name="eklemeparcasi" value="0" size="10" class="inputhesap" disabled></li>
 								<li>
-									<label>Borazan Vida 3.5x35mm</label><input name="borozanvida" value="0" size="10" class="inputhesap"></li>
+									<label>Borazan Vida 3.5x35mm</label><input name="borozanvida" value="0" size="10" class="inputhesap" disabled></li>
 								<li>
-									<label>Derz Bandı</label><input name="derzbandi" value="0" size="10" class="inputhesap"></li>
+									<label>Derz Bandı</label><input name="derzbandi" value="0" size="10" class="inputhesap" disabled></li>
 								<li>
-									<label>Derz Alçısı</label><input name="dugagipsderzdolgu" value="0" size="10" class="inputhesap"></li>
+									<label>Derz Alçısı</label><input name="dugagipsderzdolgu" value="0" size="10" class="inputhesap" disabled></li>
 								<li>
-									<label>Dübel/Pul/Vida</label><input name="dubelvida" value="0" size="10" class="inputhesap"></li>
+									<label>Dübel/Pul/Vida</label><input name="dubelvida" value="0" size="10" class="inputhesap" disabled></li>
 
 								<li>
 									<br>
@@ -171,7 +178,7 @@
 						<p class="posts-summary" style="height: 50px;">
 							Alçıpan Asma Tavan hesap tablosu için hesapla butonuna tıklayınız.
 						</p>
-						<input type="text" value="1"><div class="m2"><span class="m">m</span><span class="up">2</span></div>
+						<input type="number" value=""><div class="m2"><span class="m">m</span><span class="up">2</span></div>
 						<a href="Alcipan-Asma-Tavan.html" class="o-buttons blue"><i class="fa fa-tachometer"></i> Hesapla</a>
 					
 				</article>
@@ -183,7 +190,7 @@
 						<p class="posts-summary" style="height: 50px;">
 							Taşyünü Asma Tavan hesap tablosu için hesapla butonuna tıklayınız.
 						</p>
-						<input type="text" value="1"><div class="m2"><span class="m">m</span><span class="up">2</span></div>
+						<input type="number" value=""><div class="m2"><span class="m">m</span><span class="up">2</span></div>
 						<a href="Tasyunu-Asma-Tavan.html" class="o-buttons blue"><i class="fa fa-tachometer"></i> Hesapla</a>
 				</article>
 				<article>
@@ -194,7 +201,7 @@
 						<p class="posts-summary" style="height: 50px;">
 							Bölme Duvar Analiz hesap tablosu için hesapla butonuna tıklayınız.
 						</p>
-						<input type="text" value="1"><div class="m2"><span class="m">m</span><span class="up">2</span></div>
+						<input type="number" value=""><div class="m2"><span class="m">m</span><span class="up">2</span></div>
 						<a href="Bolme-Duvar-Analiz.html" class="o-buttons blue"><i class="fa fa-tachometer"></i> Hesapla</a>
 				</article>
 				<article>
@@ -205,7 +212,7 @@
 						<p class="posts-summary" style="height: 50px;">
 							Mantolama Analiz hesap tablosu için hesapla butonuna tıklayınız.
 						</p>
-						<input type="text" value="1"><div class="m2"><span class="m">m</span><span class="up">2</span></div>
+						<input type="number" value=""><div class="m2"><span class="m">m</span><span class="up">2</span></div>
 						<a href="Mantolama-Analiz.html" class="o-buttons blue"><i class="fa fa-tachometer"></i> Hesapla</a>
 				</article>
 				<article>
@@ -216,7 +223,7 @@
 						<p class="posts-summary" style="height: 50px;">
 							Clip-In 30x30 Asma Tavan hesap tablosu için hesapla butonuna tıklayınız.
 						</p>
-						<input type="text" value="1"><div class="m2"><span class="m">m</span><span class="up">2</span></div>
+						<input type="number" value=""><div class="m2"><span class="m">m</span><span class="up">2</span></div>
 						<a href="Clip-In-30x30-Asma-Tavan.html" class="o-buttons blue"><i class="fa fa-tachometer"></i> Hesapla</a>
 				</article>
 				<article>
@@ -227,7 +234,7 @@
 						<p class="posts-summary" style="height: 50px;">
 							Clip-In 60x60 Asma Tavan hesap tablosu için hesapla butonuna tıklayınız.
 						</p>
-						<input type="text" value="1"><div class="m2"><span class="m">m</span><span class="up">2</span></div>
+						<input type="number" value=""><div class="m2"><span class="m">m</span><span class="up">2</span></div>
 						<a href="Clip-In-60x60-Asma-Tavan.html" class="o-buttons blue"><i class="fa fa-tachometer"></i> Hesapla</a>
 				</article>
 				<article>
@@ -238,22 +245,17 @@
 						<p class="posts-summary" style="height: 50px;">
 							Giydirme-Duvar hesap tablosu için hesapla butonuna tıklayınız.
 						</p>
-						<input type="text" value="1"><div class="m2"><span class="m">m</span><span class="up">2</span></div>
+						<input type="number" value=""><div class="m2"><span class="m">m</span><span class="up">2</span></div>
 						<a href="Giydirme-Duvar.html" class="o-buttons blue"><i class="fa fa-tachometer"></i> Hesapla</a>
 				</article>
 			</div>
-			<div class="subFooter">2014. Essente Bilişim</div>
+			<div class="subFooter">2014 Essente Bilişim</div>
 			
 			<nav id="menu">
 				<ul>
 					<li class="Selected">
 						<a href="index.html">
 							<i class="fa fa-home"></i>Barokmatik
-						</a>
-					</li>
-					<li class="Selected">
-						<a href="http://barok.com.tr/m">
-							<i class="fa fa-mobile" style="font-size: 20px;margin-left: 3px;margin-right: 7px;"></i> Barok Mobil Site
 						</a>
 					</li>
 					<li>
