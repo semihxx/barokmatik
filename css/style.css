@@ -82,7 +82,7 @@ body #header { width: 100%; background: url("../img/menu-bg.svg") no-repeat cent
 body.p-home #header { height: 60px; }
 
 /* body.p-home .header-content { position: absolute; bottom: 40px; width: 100%; text-align: center; height: 80px; } */
-.header-content { position: absolute; bottom: 0px; width: 100%; text-align: center; height: 55px; }
+.header-content { position: fixed; top: 0px; width: 100%; text-align: center; height: 55px; }
 .p-landscape .header-content { /* bottom:20px; */ }
 .header-content div { font-size: 20px; color: #FFF; } 
 .mm-opening #header { height:80% !important; }
@@ -224,9 +224,9 @@ a.menu-btn { opacity:0; }
 .s-banner-content { position:absolute; bottom:10px; width:100%; text-align:center; z-index:2; color:#fff; font-size:20px; text-transform:uppercase; }
 .bannerPane img {  }
 
-a.p-link-home { color: #FFF; position: fixed !important; left: 10px; top: 10px; background: none !important; z-index: 0 !important; font-size: 20px; 
+a.p-link-home { color: #FFF; position: absolute !important; left: 10px; top: 10px; background: none !important; z-index: 0 !important; font-size: 20px; 
 	-moz-transition: all 0.3s; -webkit-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s;}
-a.p-link-back { color: #FFF; position: fixed !important; right: 10px; top: 10px; background: none !important; z-index: 0 !important; font-size: 20px; 
+a.p-link-back { color: #FFF; position: absolute !important; right: 10px; top: 10px; background: none !important; z-index: 0 !important; font-size: 20px; 
 	-moz-transition: all 0.3s; -webkit-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s;}
 a.p-link-home i,a.p-link-back i { /* text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.44); */ }
 
